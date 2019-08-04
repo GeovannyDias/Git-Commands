@@ -1,3 +1,4 @@
+#Agregar Nombre de directorios o archivos a ignorar, luego añadir a git, por ejemplo:
 test
 prueba2
 text.txt
