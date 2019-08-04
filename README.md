@@ -1,4 +1,4 @@
-## Configuración Básica
+## Configuración Básica GIT - Geo
 
 Configurar Nombre que salen en los commits
 ```ssh
@@ -17,7 +17,7 @@ Marco de colores para los comando
 
 Iniciamos GIT en la carpeta donde esta el proyecto
 ```ssh
-	git init
+	*$ git init
 ```
 Clonamos el repositorio de github o bitbucket
 ```ssh
@@ -25,7 +25,7 @@ Clonamos el repositorio de github o bitbucket
 ```
 Añadimos todos los archivos para el commit
 ```ssh
-	git add .
+	*$ git add .
 ```
 Hacemos el primer commit
 ```ssh
@@ -36,7 +36,7 @@ subimos al repositorio
 	git push origin master
 ```
 
-## GIT CLONE
+## GIT CLONE *****
 
 
 Clonamos el repositorio de github o bitbucket
@@ -48,7 +48,7 @@ Clonamos el repositorio de github o bitbucket ?????
 	git clone <url> git-demo
 ```
 
-## GIT ADD
+## GIT ADD *****
 
 
 Añadimos todos los archivos para el commit
@@ -75,7 +75,7 @@ Añadimos todos los archivos dentro de un directorios
 ```ssh
 	git add docs/
 ```
-## GIT COMMIT
+## GIT COMMIT *****
 
 Cargar en el HEAD los cambios realizados
 ```ssh
@@ -93,17 +93,22 @@ Agregar al ultimo commit, este no se muestra como un nuevo commit en los logs. S
 ```ssh
 	git commit --amend -m "Texto que identifique por que se hizo el commit"
 ```
-## GIT PUSH
+## GIT PUSH *****
 
 Subimos al repositorio
 ```ssh
-	git push <origien> <branch>
+	*$ git push <origien> <branch>
+    
+    Ejemplo:
+    
+    $ git push -u origin master
+    
 ```
 Subimos un tag
 ```ssh
 	git push --tags
 ```
-## GIT LOG
+## GIT LOG *****
 
 Muestra los logs de los commits
 ```ssh
@@ -117,12 +122,15 @@ Muestra graficos de los commits
 ```ssh
 	git log --oneline --graph
 ```
-## GIT DIFF
+## GIT DIFF *****
 
 Muestra los cambios realizados a un archivo
 ```ssh
 	git diff
 	git diff --staged
+    
+    Ejemplo:
+    $ git diff index.html
 ```
 ## GIT HEAD
 
@@ -147,11 +155,11 @@ Rollback merge/commit
 	git log
 	git reset --hard <commit_sha>
 ```
-## GIT REMOTE
+## GIT REMOTE *************
 
 Agregar repositorio remoto
 ```ssh
-	git remote add origin <url>
+	*$ git remote add origin <url>
 ```
 Cambiar de remote
 ```ssh
@@ -173,13 +181,13 @@ Limpiar todos los branches eliminados
 ```ssh
 	git remote prune origin 
 ```
-## GIT BRANCH
+## GIT BRANCH ********** $$$$ ************
 
 Crea un branch
 ```ssh
 	git branch <nameBranch>
 ```
-Lista los branches
+Lista los branches (Ramas o versiones alternas)
 ```ssh
 	git branch
 ```
@@ -190,6 +198,14 @@ Comando -d elimina el branch y lo une al master
 Elimina sin preguntar
 ```ssh
 	git branch -D <nameBranch>
+```
+Cambiar de branch o version ****$$$
+```ssh
+	git checkout <nameBranch/tagname>
+    
+    Ejemplo:
+    
+    $ git checkout login
 ```
 ## GIT TAG
 
@@ -259,11 +275,11 @@ Muestra las archivos con cambios en un directorio
 
 Lista un estado actual del repositorio con lista de archivos modificados o agregados
 ```ssh
-	git status
+	*$ git status
 ```
 Quita del HEAD un archivo y le pone el estado de no trabajado
 ```ssh
-	git checkout -- <file>
+	*$ git checkout -- <file>
 ```
 Crea un branch en base a uno online
 ```ssh
@@ -303,3 +319,12 @@ Merge con master de un fork
 	git merge upstream/master
 ```
 
+## Adicional - Geo
+
+Crear un archivo “.gitignore” en el cual colocamos los directorios o archivos que deseamos omitir o ignorar. Añadir el archivo con:
+```
+    .gitignore
+    
+    $ git add .gitignore
+
+```
