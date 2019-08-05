@@ -1,6 +1,6 @@
 ![git_2](https://user-images.githubusercontent.com/23192401/62431296-e6f69400-b6eb-11e9-89cc-b4e54d2dd4d6.jpg)
 
-# ********** COMANDOS GIT - Geo **********
+# ******************** COMANDOS GIT - Geo ********************
 
 ## Configuración Básica GIT
 
