@@ -332,3 +332,8 @@ Crear un archivo “.gitignore” en el cual colocamos los directorios o archivo
     $ git add .gitignore
 
 ```
+
+# INFORMACIÓN WEB
+## Recuperar un archivo o todo el repositorio a una versión anterior
+
+* **https://victorhckinthefreeworld.com/2016/07/28/git-recuperar-un-archivo-o-todo-el-repositorio-a-una-version-anterior/**
