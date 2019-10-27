@@ -337,3 +337,28 @@ Crear un archivo “.gitignore” en el cual colocamos los directorios o archivo
 ## Recuperar un archivo o todo el repositorio a una versión anterior
 
 * **https://victorhckinthefreeworld.com/2016/07/28/git-recuperar-un-archivo-o-todo-el-repositorio-a-una-version-anterior/**
+
+```ssh
+Restaurar a una versión antigua en el directorio de trabajo:
+
+git checkout 55df4c2 prueba.txt
+
+git add prueba.txt
+git commit -m "texto de commit"
+
+Llevar todos los archivos del repositorio a un punto predeterminado:
+
+git checkout 55df4c2
+
+Seguir este consejo:
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+```
