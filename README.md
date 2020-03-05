@@ -362,3 +362,26 @@ Or undo this operation with:
   git switch -
 
 ```
+
+# Config File
+
+```
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = http://git.kubxycorp.com/aplicaciones/entodositio.com/movil/movil-cliente.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "desarrollo"]
+	remote = origin
+	merge = refs/heads/desarrollo
+
+```
+
