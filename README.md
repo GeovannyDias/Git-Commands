@@ -366,6 +366,9 @@ Or undo this operation with:
 # Config File
 
 ```
+movil-cliente/.git/config
+
+
 [core]
 	repositoryformatversion = 0
 	filemode = false
