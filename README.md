@@ -388,3 +388,12 @@ movil-cliente/.git/config
 
 ```
 
+# Git Pull While Ignoring Local Changes
+
+```
+If on the other hand you want to keep the local modifications somehow, you'd use stash to hide them away before pulling, then reapply them afterwards:
+
+git stash
+git pull
+git stash pop
+```
