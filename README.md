@@ -422,3 +422,37 @@ git push -u origin main
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 ```
+
+# Conventional Commits
+
+* **http://conventionalcommits.org/en/v1.0.0/**
+
+```
+The commit message should be structured as follows:
+
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+
+The commit contains the following structural elements, to communicate intent to the consumers of your library:
+
+1. fix: a commit of the type fix patches a bug in your codebase (this correlates with PATCH in semantic versioning).
+2. feat: a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in semantic versioning).
+3. BREAKING CHANGE: a commit that has a footer BREAKING CHANGE:, or appends a ! after the type/scope, introduces a breaking API change (correlating with MAJOR in semantic versioning). A BREAKING CHANGE can be part of commits of any type.
+4. types other than fix: and feat: are allowed, for example @commitlint/config-conventional (based on the the Angular convention) recommends build:, chore:, ci:, docs:, style:, refactor:, perf:, test:, and others.
+5. footers other than BREAKING CHANGE: <description> may be provided and follow a convention similar to git trailer format.
+
+Additional types are not mandated by the Conventional Commits specification, and have no implicit effect in semantic versioning.
+
+Examples
+
+git commit -m 
+
+fix: correct minor typos in code see the issue for details on typos fixed.
+feat: allow provided config object to extend other configs
+docs: correct spelling of CHANGELOG
+
+```
+
