@@ -126,6 +126,11 @@ Muestra graficos de los commits
 ```ssh
 	git log --oneline --graph
 ```
+Muestra las diferencias introducidas en cada confirmación
+```ssh
+	git log -p
+	git log -p -2
+```
 ## GIT DIFF *****
 
 Muestra los cambios realizados a un archivo
