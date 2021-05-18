@@ -466,3 +466,30 @@ docs: correct spelling of CHANGELOG
 
 ```
 
+## ELIMINAR RAMAS LOCALES Y REMOTAS
+```
+Para eliminar una rama de nuestro repositorio local ejecutaremos el siguiente comando:
+
+
+$ git branch -d nombre_rama
+
+En el caso de que esa rama contenga trabajos sin fusionar, el comando anterior nos devolverá el siguiente error:
+
+
+error: The branch 'nombre-rama' is not an ancestor of your current HEAD.
+If you are sure you want to delete it, run 'git branch -D nombre-rama'.
+
+Si aún así queremos eliminar esa rama, se puede forzar el borrado de la siguiente manera:
+
+
+$ git branch -D nombre-rama
+
+En el caso de querer eliminar una rama del repositorio remoto, la sintaxis será la siguiente:
+
+
+$ git push origin :nombre-rama
+
+Y de esta forma, desaparecerá la rama nombre-rama del servidor.
+```
+
+
