@@ -393,9 +393,11 @@ movil-cliente/.git/config
 
 ```
 
-# Git Pull While Ignoring Local Changes
+## GIT STASH
 
 ```
+# Git Pull While Ignoring Local Changes
+
 If on the other hand you want to keep the local modifications somehow, you'd use stash to hide them away before pulling, then reapply them afterwards:
 
 git stash
@@ -405,6 +407,38 @@ git stash pop
 git merge <rama>
 git log --oneline --decorate --all --graph // --color
 
+
+
+Cómo guardar el trabajo en un stash.
+git stash
+git stash save "mensaje"
+
+Cómo volver a aplicar los cambios de un stash (Aplica los cambio y elimina el stash).
+git stash pop
+git stash pop stash@{2}
+
+Aplicar los cambios en el código en el que estás trabajando y conservarlos en tu stash.
+git stash apply
+
+Cómo gestionar varios stashes
+git stash list
+
+Para contextualizar, es recomendable comentar los stashes con una descripción.
+git stash save "mensaje"
+
+Cómo ver las diferencias en un stash
+git stash show
+git stash show -p
+
+Stashes parciales (Revisar tabla en url).
+git stash -p
+https://www.atlassian.com/es/git/tutorials/saving-changes/git-stash
+
+Cómo limpiar el stash.
+git stash drop stash@{1}
+
+También tienes la opción de eliminar todos los stashes.
+git stash clear
 
 ```
 
