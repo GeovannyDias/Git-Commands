@@ -526,4 +526,17 @@ $ git push origin :nombre-rama
 Y de esta forma, desaparecerá la rama nombre-rama del servidor.
 ```
 
+## Generar una nueva clave SSH y agregarla al ssh-agent
+
+* **https://docs.github.com/es/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent**
+* **https://jhooq.com/github-permission-denied-publickey/**
+
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+cat /c/Users/name-user/.ssh/id_rsa.pub
+
+Agregar la clave en /Setting/SSH and GPG keys
+
+```
+
 
