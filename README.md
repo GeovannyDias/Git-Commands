@@ -16,6 +16,10 @@ Marco de colores para los comando
 ```ssh
 	git config --global color.ui true
 ```
+Listar configuración
+```ssh
+	git config --list
+```
 
 ## Iniciando repositorio
 
