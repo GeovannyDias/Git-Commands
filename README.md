@@ -38,6 +38,10 @@ Añadimos todos los archivos para el commit
 Hacemos el primer commit
 ```ssh
 	git commit -m "Texto que identifique por que se hizo el commit"
+	
+	Editar el mensaje de un commit:
+	
+	git commit --amend -m “feat: Revised commit message”
 ```
 subimos al repositorio
 ```ssh
