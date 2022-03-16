@@ -101,9 +101,11 @@ De haber conflictos los muestra
 ```ssh
 	git commit -a 
 ```
-Agregar al ultimo commit, este no se muestra como un nuevo commit en los logs. Se puede especificar un nuevo mensaje
+Modificación del mensaje del commit de Git más reciente.
 ```ssh
-	git commit --amend -m "Texto que identifique por que se hizo el commit"
+	git commit --amend
+	git commit --amend -m "an updated commit message"
+	git commit --amend --no-edit
 ```
 ## GIT PUSH *****
 
