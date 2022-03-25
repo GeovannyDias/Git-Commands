@@ -6,7 +6,6 @@
 
 Configurar Nombre que salen en los commits
 ```ssh
-	git config --global user.name "dasdo"
 ```
 Configurar Email
 ```ssh	
@@ -463,6 +462,32 @@ git stash drop stash@{1}
 También tienes la opción de eliminar todos los stashes.
 git stash clear
 
+```
+
+## Sincroniza tu rama maestra con la del repositorio original
+
+```
+$ git branch
+$ git checkout master
+
+Agrega el repositorio original como un repositorio upstream.
+
+$ git remote add upstream [HTTPS]
+
+Busca (fetch) el repositorio.
+
+$ git fetch upstream
+
+Fusionala.
+
+$ git merge upstream/master
+
+Envía (push) los cambios a GitHub
+
+$ git push origin master
+$ git remote rm [Nombre del Repositorio Remoto]
+
+https://www.freecodecamp.org/espanol/news/como-hacer-tu-primer-pull-request-en-github/#:~:text=Crea%20un%20pull%20request,%C2%A1Felicitaciones!
 ```
 
 # REPOSITORY
