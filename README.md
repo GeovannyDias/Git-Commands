@@ -465,7 +465,7 @@ git stash clear
 ```
 
 ## Sincroniza tu rama maestra con la del repositorio original
-
+* **https://www.freecodecamp.org/espanol/news/como-hacer-tu-primer-pull-request-en-github/**
 ```
 $ git branch
 $ git checkout master
@@ -487,7 +487,6 @@ Envía (push) los cambios a GitHub
 $ git push origin master
 $ git remote rm [Nombre del Repositorio Remoto]
 
-https://www.freecodecamp.org/espanol/news/como-hacer-tu-primer-pull-request-en-github/#:~:text=Crea%20un%20pull%20request,%C2%A1Felicitaciones!
 ```
 
 # REPOSITORY
