@@ -30,6 +30,11 @@ Clonamos el repositorio de github o bitbucket
 ```ssh
 	git clone <url>
 ```
+
+Clonamos el repositorio a partir de una rama de github o bitbucket
+```ssh
+	git clone -b branch_name <url>
+```
 Añadimos todos los archivos para el commit
 ```ssh
 	*$ git add .
