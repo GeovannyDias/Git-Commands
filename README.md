@@ -590,5 +590,10 @@ cat /c/Users/name-user/.ssh/id_rsa.pub
 Agregar la clave en /Setting/SSH and GPG keys
 
 ```
+## Error: git Filename too long
+* **https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows**
 
-
+```
+git config --system core.longpaths true (OK)
+git config --system core.longpaths false
+```
