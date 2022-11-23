@@ -91,6 +91,26 @@ Añadimos todos los archivos dentro de un directorios
 ```ssh
 	git add docs/
 ```
+
+Add all files to a commit except a single file
+```ssh
+Now git supports exclude certain paths and files by pathspec magic :(exclude) and its short 
+form :!. So you can easily achieve it as the following command.
+
+	git add --all -- :!main/dontcheckmein.txt
+	git add -- . :!main/dontcheckmein.txt
+
+Actually you can specify more:
+	
+	git add --all -- :!path/to/file1 :!path/to/file2 :!path/to/folder1/*
+	git add -- . :!path/to/file1 :!path/to/file2 :!path/to/folder1/*
+	
+For Mac and Linux, surround each file/folder path with quotes
+
+	git add --all -- ':!path/to/file1' ':!path/to/file2' ':!path/to/folder1/*'
+
+```
+
 ## GIT COMMIT *****
 
 Cargar en el HEAD los cambios realizados
