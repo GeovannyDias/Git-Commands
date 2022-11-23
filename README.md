@@ -99,6 +99,7 @@ form :!. So you can easily achieve it as the following command.
 
 	git add --all -- :!main/dontcheckmein.txt
 	git add -- . :!main/dontcheckmein.txt
+	git add . -- :!src/app/shared/*
 
 Actually you can specify more:
 	
