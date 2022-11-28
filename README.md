@@ -260,6 +260,7 @@ Muestra una lista de todos los tags
 Crea un nuevo tags
 ```ssh
 	git tag -a <verison> - m "esta es la versión x"
+	git push origin <tag name version>
 ```
 Tags commans
 ```ssh
@@ -271,6 +272,8 @@ Tags commans
 	
 	Eliminación de etiquetas:
 	git tag -d v1
+	
+	git push origin :v1
 ```
 
 
