@@ -386,8 +386,13 @@ Crear un archivo “.gitignore” en el cual colocamos los directorios o archivo
     .gitignore
     
     $ git add .gitignore
-
 ```
+
+Ignoras cualquier archivo sin usar el fichero .gitignore de forma global y compartido:
+```
+    nano ~/.gitignore_global
+```
+
 
 # INFORMACIÓN WEB
 ## Recuperar un archivo o todo el repositorio a una versión anterior
