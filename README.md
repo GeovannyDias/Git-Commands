@@ -626,8 +626,6 @@ Agregar la clave en /Setting/SSH and GPG keys
 git config --system core.longpaths true (OK)
 git config --system core.longpaths false
 ```
-
-```
 ## Add Git security exception fails
 
 ```
