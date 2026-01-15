@@ -631,3 +631,18 @@ git config --system core.longpaths false
 ```
 git config --global --add safe.directory "*"
 ```
+---
+
+# Explicación del comando `git ls-remote origin`
+
+## ¿Qué es `git ls-remote`?
+
+El comando `git ls-remote` se utiliza para **listar las referencias de un repositorio remoto** sin necesidad de clonar el repositorio ni descargar su contenido.
+Cuando se ejecuta contra un remoto específico (por ejemplo `origin`), Git se conecta directamente al servidor y solicita información básica del repositorio.
+
+## Comando
+
+```bash
+git ls-remote origin
+```
+
