@@ -646,3 +646,22 @@ Cuando se ejecuta contra un remoto específico (por ejemplo `origin`), Git se co
 git ls-remote origin
 ```
 
+## Upstream entre repositorios distintos
+
+```
+git remote add upstream URL_DEL_1005
+
+git fetch upstream
+
+git checkout main
+git reset --hard upstream/main
+git push origin main --force
+
+git checkout develop
+git reset --hard upstream/develop
+git push origin develop --force
+
+```
+
+
+
