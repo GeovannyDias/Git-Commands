@@ -1,6 +1,6 @@
 ![git_2](https://user-images.githubusercontent.com/23192401/62431296-e6f69400-b6eb-11e9-89cc-b4e54d2dd4d6.jpg)
 
-# ****************** COMANDOS GIT - Geo ******************
+# COMANDOS GIT - Geo
 
 ## Configuración Básica GIT
 
@@ -660,6 +660,15 @@ git push origin main --force
 git checkout develop
 git reset --hard upstream/develop
 git push origin develop --force
+
+# Orden Visual
+# Trackear rama como origin en lugar de upstream123XX (Solo estético/operativo)
+
+git branch --set-upstream-to=origin/feature/branch_name
+git branch --vv
+
+# Quiere la rama origen si existe dos iguales en diferentes respositorio
+git checkout --track origin/feature/branch_name
 
 ```
 
